@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.4'
+gem 'rails', '>= 5.0.0.beta4', '< 5.1'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -11,11 +11,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'materialize-sass'
-gem 'devise'
+gem 'devise', github: 'plataformatec/devise', branch: 'master'
 gem 'figaro'
 gem 'rails_12factor'
 gem 'annotate'
-gem 'administrate', '~> 0.1.2'
+gem 'administrate', github: 'hayesr/administrate', branch: 'rails5_compat'
 gem 'better_errors'
 
 group :development do
