@@ -1,24 +1,5 @@
-<div class="section no-pad-bot" id="index-banner">
-  <div class="container">
-     <div class="row center">
-        <div class="col s12">
-          <div class="card">
-            <div class="card-content row">
-              <div class="card-image col s12 l3 left">
-                <%= image_tag 'https://scontent.xx.fbcdn.net/t31.0-8/13063408_10154066357490409_519135077130341641_o.jpg', size: '150' %>
-              </div>
-              <div class="left">
-                <p>Faethon Milikouris</p>
-                <p>Software Engineer</p>
-                <p>San Francisco </p>
-              </div>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-  </div>
-</div>
+<% if user_signed_in? %>
+  <%= render 'cv' %>
+<% else %>
+  <%= render 'landing' %>
+<%end %>
